@@ -502,35 +502,61 @@ st.header("Design Rationale")
 st.markdown("""
 ### Dashboard Design Principles
 This dashboard was designed based on the following data visualization principles and cognitive factors:
+# Dashboard Design Principles
+---------------------------
+This dashboard was designed following established cognitive principles and data visualization best practices to support effective decision-making when exploring Madrid's real estate market.
 
-1. **Overview First, Details on Demand (Shneiderman's Mantra)**:
-   - The dashboard starts with key metrics and high-level visualizations
-   - Uses tabs to organize detailed information by category
-   - Provides detailed property data in a searchable table
+## Cognitive Principles Applied
+-----------------------------
+### Cognitive Load Management
+- Information Chunking: Related metrics and visualizations are grouped into logical sections (Market Overview, Property Analysis, Value Analysis)
+- Progressive Disclosure: Information is revealed through tabs, moving from overview to detailed analysis
+- Working Memory Optimization: Limited to 5-7 key metrics in each section to prevent cognitive overload
 
-2. **Preattentive Processing**:
-   - Color is used consistently to represent property types
-   - Size encoding is used to represent quantity in scatter plots
-   - Position and length are used in bar charts for easy comparison
+### Decision Support
+-----------------
+- Decision Hierarchy: Dashboard follows a natural decision flow from situation awareness (Key Metrics) to exception identification (visualizations highlighting outliers) to comparative analysis (neighborhood comparisons)
+- Comparative Analysis: Consistent scales and visual encoding allow direct comparison between neighborhoods, property types, and other dimensions
+- Pattern Recognition: Visualizations are designed to highlight trends, correlations, and anomalies that might be invisible in raw data
 
-3. **Cognitive Load Reduction**:
-   - Filters are placed in the sidebar to reduce clutter in the main view
-   - Information is chunked into logical categories (Market, Property, Value)
-   - Consistent color schemes are maintained throughout
+### Bias Mitigation
+-----------------
+- Confirmation Bias Mitigation: Multiple perspectives of the same data are presented across different tabs
+- Recency Bias Mitigation: Historical context is provided through time-based visualizations
+- Framing Effect Mitigation: Data is presented with neutral language and multiple reference points
 
-4. **Data-Ink Ratio (Tufte's Principle)**:
-   - Visualizations focus on the data rather than decorative elements
-   - Grid lines are minimized
-   - Legends are placed strategically to avoid taking up too much space
+## Visualization Principles Applied
+----------------------------------
+### Data-Ink Ratio
+-------------
+- Non-essential decorative elements are minimized
+- Clean, white backgrounds enhance focus on the data
+- Gridlines and borders are reduced to essential elements
 
-5. **Interactive Exploration**:
-   - Multiple filters allow users to narrow down properties of interest
-   - Hover tooltips provide additional information without cluttering the display
+### Chart Type Appropriateness
+---------------------------
+- Bar charts for comparing discrete categories (neighborhoods, property types)
+- Scatter plots for examining relationships between variables (price vs. area)
+- Histograms for understanding distributions (price, rooms)
 
-6. **Decision Support Elements**:
-   - Value analysis tab specifically designed to highlight potential good investments
-   - Neighborhood comparison tools to evaluate locations
-   - Trend lines in scatter plots help identify patterns
+### Visual Hierarchy
+-----------------
+- Key metrics positioned prominently at the top
+- Larger charts for primary insights, smaller for supporting details
+- Color used strategically to highlight important patterns
 
-This design supports decision-making by enabling users to quickly identify trends, compare properties across multiple dimensions, and discover potential value opportunities in the Madrid real estate market.
+### Contextual Reference Points
+----------------------------
+- Average lines and trendlines provide context for individual data points
+- Neighborhood averages serve as benchmarks for property evaluation
+- Filter states are clearly visible to maintain awareness of the current data context
+
+## User Experience Enhancements
+------------------------------
+- Interactive Filtering: Sidebar filters allow users to focus on relevant segments
+- Responsive Design: Charts adjust to screen size for optimal viewing
+- Focus + Context: Detail tables provide granular data while visualizations maintain broader patterns
+- Consistent Visual Language: Uniform color scheme, typography, and chart styling throughout
+
+This dashboard balances analytical depth with cognitive accessibility, enabling users to quickly understand market trends while providing tools for detailed property evaluation.
 """)
