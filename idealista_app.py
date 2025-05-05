@@ -501,7 +501,36 @@ st.markdown("---")
 st.header("Design Rationale")
 st.markdown("""
 ### Dashboard Design Principles
+This dashboard was designed based on the following data visualization principles and cognitive factors:
 
-This dashboard was designed based on data visualization principles and cognitive factors
+1. **Overview First, Details on Demand (Shneiderman's Mantra)**:
+   - The dashboard starts with key metrics and high-level visualizations
+   - Uses tabs to organize detailed information by category
+   - Provides detailed property data in a searchable table
+
+2. **Preattentive Processing**:
+   - Color is used consistently to represent property types
+   - Size encoding is used to represent quantity in scatter plots
+   - Position and length are used in bar charts for easy comparison
+
+3. **Cognitive Load Reduction**:
+   - Filters are placed in the sidebar to reduce clutter in the main view
+   - Information is chunked into logical categories (Market, Property, Value)
+   - Consistent color schemes are maintained throughout
+
+4. **Data-Ink Ratio (Tufte's Principle)**:
+   - Visualizations focus on the data rather than decorative elements
+   - Grid lines are minimized
+   - Legends are placed strategically to avoid taking up too much space
+
+5. **Interactive Exploration**:
+   - Multiple filters allow users to narrow down properties of interest
+   - Hover tooltips provide additional information without cluttering the display
+
+6. **Decision Support Elements**:
+   - Value analysis tab specifically designed to highlight potential good investments
+   - Neighborhood comparison tools to evaluate locations
+   - Trend lines in scatter plots help identify patterns
+
+This design supports decision-making by enabling users to quickly identify trends, compare properties across multiple dimensions, and discover potential value opportunities in the Madrid real estate market.
 """)
-
